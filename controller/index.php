@@ -10,3 +10,7 @@ class ExampleController {
         return $data;
     }
 }
+
+$telegram = new TelegramAPI('YOUR_BOT_TOKEN');
+$me = $telegram->getMe();
+echo 'Bot name: ' . $me['result']['first_name'];

@@ -1,5 +1,6 @@
 {
     "require": {
         "guzzlehttp/guzzle": "*"
+        "catfan/Medoo": "^2.2"
     }
 }

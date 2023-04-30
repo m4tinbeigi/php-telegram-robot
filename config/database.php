@@ -1,22 +1,13 @@
 <?php
-    // Database connection settings
-    $config['db'] = array(
-        'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'mydatabase',
-        'dbdriver' => 'mysqli',
-        'dbprefix' => '',
-        'pconnect' => FALSE,
-        'db_debug' => (ENVIRONMENT !== 'production'),
-        'cache_on' => FALSE,
-        'cachedir' => '',
-        'char_set' => 'utf8',
-        'dbcollat' => 'utf8_general_ci',
-        'swap_pre' => '',
-        'encrypt' => FALSE,
-        'compress' => FALSE,
-		'stricton' => FALSE,
-		'failover' => array(),
-		'save_queries' => TRUE
-);
+
+require_once 'vendor/autoload.php';
+
+use Medoo\Medoo;
+
+$database = new Medoo([
+    'database_type' => 'mysql',
+    'database_name' => 'database_name',
+    'server' => 'localhost',
+    'username' => 'username',
+    'password' => 'password'
+]);

@@ -1,4 +1,6 @@
 {
+	"name": "php-telegram-robot",
+    "description": "Create Telegram Robot by php",
     "require": {
         "guzzlehttp/guzzle": "*"
         "catfan/Medoo": "^2.2"
